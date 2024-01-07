@@ -5,23 +5,23 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.baner-container {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.eisenhower-matrix__img {
+.baner__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.baner .baner-more {
   font-family: Fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .baner {
     text-align: center;
   }
 }
@@ -34,7 +34,7 @@
 
 .input-label,
 .edit-input,
-.task,
+.task-input,
 .new-task__input {
   width: 56%;
   display: inline-block;
@@ -61,16 +61,16 @@
 .edit-input,
 .new-task__input,
 .checkbox-input,
-.task,
-.button__add,
-.edit,
-.delete {
+.task-input,
+.add-btn,
+.edit-btn,
+.del-btn {
   outline: none;
 }
 
-.button__add,
-.edit,
-.delete {
+.add-btn,
+.edit-btn,
+.del-btn {
   background: none;
   border: 0px;
   color: #888;
@@ -80,9 +80,9 @@
   cursor: pointer;
 }
 
-.button__add:hover,
-.edit:hover,
-.delete:hover {
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
   color: #3a3A3a;
 }
 
@@ -98,8 +98,7 @@
   text-transform: uppercase;
 }
 
-.edit-input,
-.task,
+.task-input,
 .edit-input,
 .new-task__input {
   margin: 0;
@@ -115,7 +114,7 @@
 }
 
 .edit-input:focus,
-.task:focus,
+.task-input:focus,
 .new-task__input:focus {
   color: #333;
 }
@@ -163,18 +162,18 @@
   width: 226px;
 }
 
-.task,
+.task-input,
 .edit-input {
   width: 226px;
 }
 
-.delete__img {
+.del__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete__img:hover {
+.del__img:hover {
   transform: rotateZ(0);
 }
 
@@ -186,11 +185,11 @@
 
 /* Edit Task */
 .edit-input[type="text"],
-.task[type=text] {
+.task-input[type=text] {
   display: none;
 }
 
-.editMode .task[type="text"],
+.editMode .task-input[type="text"],
 .editMode .edit-input[type="text"] {
   display: inline-block;
   width: 224px;
