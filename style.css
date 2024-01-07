@@ -54,7 +54,8 @@
 .list-item-incomplete,
 .edit-mode,
 .list-item-completed, 
-.h3 {
+.h1,
+.h2 {
   list-style: none;
 }
 
@@ -87,7 +88,8 @@
 }
 
 /* Heading */
-.h3,
+.h1,
+.h2,
 .new-task-label {
   color: #333;
   font-weight: 700;
